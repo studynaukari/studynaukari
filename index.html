@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study Naukari - Government Jobs & Study Material</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="/" class="logo">
+        <img src="/logo.png" alt="Study Naukari Logo" class="logo-img">
+        <span>Study<span class="highlight">Naukari</span></span>
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#study-material">Study Material</a></li>
+          <li><a href="#govt-vacancy">Govt. Vacancy</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Your Gateway to <br> <span class="text-gradient">Government Jobs</span> & Success</h1>
+          <p>Find the latest notifications, admit cards, results, and premium study material all in one place.</p>
+          <div class="search-bar">
+            <input type="text" placeholder="Search for exams, vacancies, or notes...">
+            <button type="button" aria-label="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <div class="quick-tags">
+            <span>Popular:</span>
+            <a href="#" class="tag">UPSC</a>
+            <a href="#" class="tag">Banking</a>
+            <a href="#" class="tag">SSC CGL</a>
+            <a href="#" class="tag">Railways</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories" id="study-material">
+      <div class="container">
+        <div class="section-header">
+          <h2>Browse Categories</h2>
+          <a href="#" class="view-all">View All</a>
+        </div>
+        <div class="category-grid">
+          <div class="category-card">
+            <div class="icon">📚</div>
+            <h3>UPSC / IAS</h3>
+            <p>Prelims & Mains Material</p>
+          </div>
+          <div class="category-card">
+            <div class="icon">👮</div>
+            <h3>Police / Defense</h3>
+            <p>Constable, SI, Army</p>
+          </div>
+          <div class="category-card">
+            <div class="icon">🏦</div>
+            <h3>Banking</h3>
+            <p>PO, Clerk, RBI</p>
+          </div>
+          <div class="category-card">
+            <div class="icon">👩‍🏫</div>
+            <h3>Teaching</h3>
+            <p>CTET, UPTET, Super TET</p>
+          </div>
+          <div class="category-card">
+            <div class="icon">🚆</div>
+            <h3>Railways</h3>
+            <p>NTPC, Group D</p>
+          </div>
+          <div class="category-card">
+            <div class="icon">⚖️</div>
+            <h3>State PSC</h3>
+            <p>UPPSC, BPSC, MPPSC</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="notifications" id="govt-vacancy">
+      <div class="container">
+        <div class="section-header-center">
+          <h2>Government Vacancies</h2>
+        </div>
+        <div class="tabs">
+          <button class="tab-btn active" data-target="latest-jobs">Latest Jobs</button>
+          <button class="tab-btn" data-target="admit-cards">Admit Cards</button>
+          <button class="tab-btn" data-target="results">Results</button>
+        </div>
+
+        <div class="tab-content active" id="latest-jobs">
+          <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="upsc">UPSC</button>
+            <button class="filter-btn" data-filter="banking">Banking</button>
+            <button class="filter-btn" data-filter="teaching">Teaching</button>
+            <button class="filter-btn" data-filter="defense">Defense</button>
+            <button class="filter-btn" data-filter="railway">Railway</button>
+          </div>
+          <ul class="notification-list">
+            <li data-category="banking">
+              <a href="#">
+                <span class="badge new">New</span>
+                <span class="title">SSC CGL 2025 Notification Out - Apply Online for 5000+ Posts</span>
+                <span class="date">Nov 30, 2025</span>
+              </a>
+            </li>
+            <li data-category="banking">
+              <a href="#">
+                <span class="badge urgent">Last Date</span>
+                <span class="title">IBPS PO Mains Application Form Closing Soon</span>
+                <span class="date">Nov 29, 2025</span>
+              </a>
+            </li>
+            <li data-category="defense">
+              <a href="#">
+                <span class="badge">Update</span>
+                <span class="title">UP Police Constable Recruitment 2025 - 25000 Vacancies</span>
+                <span class="date">Nov 28, 2025</span>
+              </a>
+            </li>
+            <li data-category="railway">
+              <a href="#">
+                <span class="badge">New</span>
+                <span class="title">Railway NTPC Phase 2 Recruitment Announced</span>
+                <span class="date">Nov 28, 2025</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="tab-content" id="admit-cards">
+          <ul class="notification-list">
+            <li>
+              <a href="#">
+                <span class="title">UPSC Civil Services Mains Admit Card 2025</span>
+                <span class="date">Nov 25, 2025</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="title">SSC CHSL Tier 1 Admit Card Download</span>
+                <span class="date">Nov 24, 2025</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="tab-content" id="results">
+          <ul class="notification-list">
+            <li>
+              <a href="#">
+                <span class="title">SBI PO Final Result 2025 Declared</span>
+                <span class="date">Nov 20, 2025</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="title">UPPSC PCS 2024 Final Result</span>
+                <span class="date">Nov 18, 2025</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="view-more-container">
+          <a href="#" class="btn-secondary">View All Notifications</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="/" class="logo-footer">Study<span class="highlight">Naukari</span></a>
+          <p>Your trusted partner for government job preparation and study resources.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="#">UPSC</a></li>
+            <li><a href="#">Banking</a></li>
+            <li><a href="#">Teaching</a></li>
+            <li><a href="#">Defense</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="Twitter">TW</a>
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Telegram">TG</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 StudyNaukari.com. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
